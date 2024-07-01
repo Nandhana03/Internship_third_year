@@ -21,7 +21,10 @@ const LoginForm = () => {
     e.preventDefault();
     const { username, password } = credentials;
 
-    if (username === 'admin' && password === 'admin@101') {
+    const storedUsername = process.env.REACT_APP_USERNAME;
+    const storedPassword = process.env.REACT_APP_PASSWORD;
+
+    if (username === storedUsername && password === storedPassword) {
       setIsLoggedIn(true);
     } else {
       setError('Invalid username or password');
