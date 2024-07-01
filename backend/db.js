@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const connectDB=async ()=>
-    {
-        try{
-            const conn=await mongoose.connect('mongodb+srv://nandhanavivek03:Vqq8ZbsI1H14fx3l@cluster0.mvdtqkj.mongodb.net/applicants?retryWrites=true&w=majority&appName=Cluster0');
-            console.log(`MongoDB Connected : ${conn.connection.host}`);
-         }
-         catch(error)
-         {
-            console.log(error);
-            process.exit(1);
-         }
-    };
-    module.exports=connectDB;
+const connectDB = async () => {
+    try {
+        const conn = await mongoose.connect(process.env.MONGODB_URI);
+        console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+        console.error(error);
+        process.exit(1);
+    }
+};
+
+module.exports = connectDB;
