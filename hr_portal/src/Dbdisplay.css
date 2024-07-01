@@ -1,0 +1,88 @@
+.db-display {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f0f0f0; 
+}
+
+.db-display h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.db-display table {
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.db-display table th,
+.db-display table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.db-display table th {
+    background-color: steelblue;
+    color: white;
+}
+
+.db-display table td a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.db-display table td a:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
+
+.db-display p {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.filters-search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width:900px;
+    /* margin-right: 30px; */
+}
+
+.filters {
+    display: flex;
+    margin-right:10px;
+}
+
+.filters button {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px 10px;  /* Smaller button size */
+    margin-left: 10px;  /* Spacing between buttons */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width:90px;
+}
+
+.filters button:hover {
+    background-color: darkblue; /* Slightly darker blue on hover */
+}
+
+.search-bar {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Matching rounded corners */
+    margin-right: 10px;
+}
