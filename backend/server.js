@@ -277,6 +277,7 @@ const connectDB = require('./db'); // Assuming correct path to db.js
 const itemModel = require('./models/Item'); // Assuming correct path to Item.js
 const cors = require('cors');
 const multer = require('multer'); // Middleware for handling multipart/form-data
+require('dotenv').config(); 
 
 const app = express();
 app.use(express.json());
